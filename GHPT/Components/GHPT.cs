@@ -192,8 +192,10 @@ public class GHPT : GH_Component, IGH_InitCodeAware
 		{
 			pManager.AddTextParameter("Prompt", "P", "LLM prompt for instantiating components", GH_ParamAccess.item);
 			pManager.AddNumberParameter("Temperature", "T", "Controls how \"creatively\" the network responds to your prompt", GH_ParamAccess.item, 0.7);
+			pManager.AddTextParameter("Reasoning Effort", "R", "Controls the level of reasoning effort for o3-mini and o3-mini-high models", GH_ParamAccess.item, "high");
 
 			pManager[1].Optional = true;
+			pManager[2].Optional = true;
 		}
 
 		/// <summary>
@@ -214,9 +216,10 @@ public class GHPT : GH_Component, IGH_InitCodeAware
 
 			string prompt = string.Empty;
 			double temperature = 0.7;
-
+			string reasoningEffort = "high";
 			DA.GetData(0, ref prompt);
 			DA.GetData(1, ref temperature);
+			DA.GetData(2, ref reasoningEffort);
 
 			if (string.IsNullOrEmpty(prompt))
 			{
