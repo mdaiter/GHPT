@@ -14,9 +14,11 @@ It was developed at the AEC Tech Seattle Hackathon 2023 hosted by Thornton Tomas
 
 ## Installation
 Your options for installing GHPT are as follows:
-- Install the plug-in from [Food4Rhino](https://www.food4rhino.com/en/app/ghpt).
-- Install the GHPT Yak package from Rhino's Package Manager.
-- Build from source.
+- Build from source. I wish there were a better way to do this. But for fixes, and this only works on nightly, definitely build from source.
+### Building from source
+1. `brew install dotnet`
+2. `dotnet build`
+3. `dotnet run`
 
 ## Token Configuration
 Once GhPT is downloaded and installed, the OpenAI token key needs to be set up through the pop-up Token Configuration Window. To use the OpenAI API, you need to provide an API key and specify a GPT model.
