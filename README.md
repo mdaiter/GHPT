@@ -10,6 +10,7 @@ It was developed at the AEC Tech Seattle Hackathon 2023 hosted by Thornton Tomas
 - [Sergey Pigach](https://github.com/enmerk4r) - Thornton Tomasetti
 - [Ryan Erbert](https://github.com/RyanErbert)
 - [Quoc Dang](https://github.com/jackDang2803)
+- [Matthew Daiter](https://github.com/mdaiter)
 
 ## Installation
 Your options for installing GHPT are as follows:
